@@ -1993,13 +1993,13 @@ input::-moz-focus-inner {
 /*	box-sizing: border-box;*/
 /*	display: inline-block;*/
 	vertical-align: middle;
-	margin-left: 13%;	
-	margin-right: 13%;
+	margin-left: 10.5%;	
+	margin-right: 10.5%;
 /*	background: rgba(255,255,255,1.00);*/
 }
 
 .home-carousel-thumbnails img {
-	width: 75%;
+	width: 77%;
 	vertical-align: middle;
 }
 .home-carousel-thumbnails img:hover {
@@ -2043,8 +2043,13 @@ input::-moz-focus-inner {
 	left: 0;
 }
 */
+.slick-slide, .slick-slide *{ 
+	outline: none !important; 
+}
+
 .thumbnail-content {
-	padding-top: 0.5em;
+	/* display: inline-flex; */
+	padding-top: 0.6%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
