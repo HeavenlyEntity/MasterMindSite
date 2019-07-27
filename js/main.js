@@ -277,21 +277,7 @@
     };
 
 
-   /* Animate On Scroll
-    * ------------------------------------------------------ */
-    var clAOS = function() {
-        
-        AOS.init( {
-            offset: 200,
-            duration: 600,
-            easing: 'ease-in-sine',
-            delay: 300,
-            once: true,
-            disable: 'mobile'
-        });
-
-    };
-
+   
 
    /* AjaxChimp
     * ------------------------------------------------------ */
@@ -334,7 +320,7 @@
         fadeInTime  = 400,         // how slow/fast you want the button to show
         fadeOutTime = 400,         // how slow/fast you want the button to hide
         scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
-        goTopButton = $(".cl-go-top")
+        goTopButton = $(".cl-go-top");
         
         // Show or hide the sticky footer button
         $(window).on('scroll', function() {
@@ -361,7 +347,6 @@
         clSmoothScroll();
         clPlaceholder();
         clAlertBoxes();
-        clAOS();
         clAjaxChimp();
         clBackToTop();
 

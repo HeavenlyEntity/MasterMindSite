@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/pwh8kzd.css">
     
@@ -148,12 +149,11 @@
 <!-- home
 ================================================== -->
     <div class="featured-people-slider slider">
-		<div class="slide">
-            <section id="home " class="s-home target-section panel" data-parallax="scroll"
-                     data-image-src="images/MainPhotopng.png"
-                     data-natural-width="1193" data-natural-height="663" data-position-y="top">
-
-                <div class="home-content">
+		<div class="slide image-load-1">
+            <section id="home " 
+					 class="s-home target-section panel"
+			 >
+				<div class="home-content ">
 
                     <div class="row home-content__main">
                         <h1>
@@ -181,17 +181,18 @@
 
             </section> <!-- end s-home -->
  			</div>
-			<div class="slide">
-            <section id="home " class="s-home target-section panel" data-parallax="scroll"
-                     data-image-src="images/MainPhotopng.png"
-                     data-natural-width="1193" data-natural-height="663" data-position-y="top">
+			<div class="slide image-load-2">
+            <section 
+					id="home"
+					class="s-home target-section panel" 
+			>
 
                 <div class="home-content">
 
                     <div class="row home-content__main">
                         <h1>
-                            RICK<br>
-                            ROBBINS
+                            MICHAEL<br>
+                            JORDAN
                         </h1>
                         <p>
                             TEACHES HIS WEALTH HABBITS <br>
@@ -214,17 +215,17 @@
 
               </section> <!-- end s-home -->
  			</div>
-		 	 <div class="slide">
-              <section id="home" class="s-home target-section" data-parallax="scroll"
-                     data-image-src="images/portfolio/shutterbug@2x.jpg" data-natural-width="1193"
-                     data-natural-height="663"
-                     data-position-y="top" >
+		 	 <div class="slide image-load-3">
+              <section
+                     id="home"
+                     class="s-home target-section"
+              >
                 <div class="home-content">
 
                     <div class="row home-content__main">
                         <h1>
-                            CHRIS<br>
-                            ROCK
+                            SARA<br>
+                            BLAKELY
                         </h1>
                         <p>
                             TEACHES HIS WEALTH HABBITS <br>
@@ -246,17 +247,14 @@
 
             </section> <!-- end s-home -->
   		  </div>
-		<div class="slide">
-            <section id="home" class="s-home target-section" data-parallax="scroll"
-                     data-image-src="images/portfolio/shutterbug@2x.jpg" data-natural-width="1193"
-                     data-natural-height="663"
-                     data-position-y="top" >
+		<div class="slide image-load-4">
+            <section id="home" class="s-home target-section" >
                 <div class="home-content">
 
                     <div class="row home-content__main">
                         <h1>
-                            BON<br>
-                            ROCK
+                            RICHARD<br>
+                            BRANSON
                         </h1>
                         <p>
                             TEACHES HIS WEALTH HABBITS <br>
@@ -278,11 +276,11 @@
 
             </section> <!-- end s-home -->
   		  </div>
-		<div class="slide">
-            <section id="home" class="s-home target-section" data-parallax="scroll"
-                     data-image-src="images/portfolio/shutterbug@2x.jpg" data-natural-width="1193"
-                     data-natural-height="663"
-                     data-position-y="top" >
+		<div class="slide image-load-5">
+            <section id="home"
+                     class="s-home target-section"
+                     data-parallax="scroll"
+            >
                 <div class="home-content">
 
                     <div class="row home-content__main">
@@ -313,37 +311,46 @@
     </div>
 
 <div class="carousel-controlbox">
-	
+    <div class="arrow-left-container">
     <!--	Arrows nesting images begin here  	-->
-    <img class="carousel-arrow-left prev" src="images/arrows-left/caro-arrow-left3x.png">
-	<div class="thumbnail-content">
-    <div class="home-carousel-thumbnails">
-		<!--     Thumbnails must not exceed 1216px and height of 676px		-->
-       <div>
-		   	<img src="images/carousel-thumbnails/MainPhotopng.png"  >
-		  	<p>TONY ROBBINS</p>
-		</div>
-        <div>
-			<img src="images/carousel-thumbnails/MainPhotopng.png" alt="Tony Robbins" >
-        </div>
-        <div>
-			<img src="images/carousel-thumbnails/MainPhotopng.png"  >
-        </div>
-        <div>
-			<img src="images/carousel-thumbnails/MainPhotopng.png" >
-        </div>
-        <div>
-			<img src="images/carousel-thumbnails/MainPhotopng.png" >
-         </div>
-		<div>
-			<img src="images/carousel-thumbnails/MainPhotopng.png" >
-         </div>
-		<div>
-			<img src="images/carousel-thumbnails/MainPhotopng.png" >
-         </div>
+        <img class="carousel-arrow-left prev" src="images/arrows-left/caro-arrow-left3x.png">
     </div>
+	<div class="thumbnail-content">
+        <div class="home-carousel-thumbnails">
+            <!--     Thumbnails must not exceed 1216px and height of 676px		-->
+           <div  class="carousel-nav-container">
+                <img src="./images/carousel-top-slider/TonyRobbins/MainPhoto.png"  >
+                <p class="carousel-name-text">TONY ROBBINS</p>
+            </div>
+            <div class="carousel-nav-container">
+                <img src="./images/carousel-thumbnails/thumbnailJordan.png" alt="Michael Jordan">
+                <p class="carousel-name-text">MICHAEL JORDAN</p>
+            </div>
+            <div class="carousel-nav-container">
+                <img src="./images/carousel-thumbnails/saraThumbnail.png" alt="Sara Blakely">
+                <p class="carousel-name-text">SARA BLAKELY</p>
+            </div>
+            <div class="carousel-nav-container">
+                <img src="./images/carousel-thumbnails/richBranson.png" alt="Richard Branson">
+                <p class="carousel-name-text">RICHARD BRANSON</p>
+            </div>
+            <div class="carousel-nav-container">
+                <img src="./images/carousel-top-slider/TonyRobbins/MainPhoto.png" alt="Tony Robbins">
+                <p class="carousel-name-text">TONY ROBBINS</p>
+             </div>
+            <div class="carousel-nav-container">
+                <img src="./images/carousel-thumbnails/richBranson.png" alt="Tony Robbins">
+                <p class="carousel-name-text">RICHARD BRANSON</p>
+             </div>
+            <div class="carousel-nav-container">
+                <img src="./images/carousel-top-slider/TonyRobbins/MainPhoto.png" alt="Tony Robbins">
+                <p class="carousel-name-text">TONY ROBBINS</p>
+             </div>
+        </div>
 	</div>
-    <img class="carousel-arrow-right next" src="images/arrows-right/caro-arrow-right3x.png" >
+    <div class="arrow-right-container">
+        <img class="carousel-arrow-right next" src="images/arrows-right/caro-arrow-right3x.png" >
+    </div>
     <!--	End of arrows and images		-->
 	
 </div>
@@ -351,88 +358,149 @@
 <!-- about
 ================================================== -->
 <section id="about" class="s-about">
+<!--<img  class="section-overlay" src="images/Mastermind Overlay2x.png" alt=""/>-->
+    <div class="row section-header"
 
-    <div class="row section-header" data-aos="fade-up">
+    >
         <div class="col-full">
-            <h3 class="subhead">Who We Are</h3>
-            <h1 class="display-1">We are a group of design driven individuals passionate about creating beautiful UI
-                designs.</h1>
+			
+			<h1 class="display-1">WHAT IS <span>MASTERMIND.COM</span></h1>
         </div>
     </div> <!-- end section-header -->
 
-    <div class="row" data-aos="fade-up">
+    <div class="row" >
         <div class="col-full">
             <p class="lead">
-                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                <strong>Mastermind.com</strong> will soon be the world's leading "go to" company to learn how to run lucrative, impactful masterminds for yourself 
+				or others while simultaneously helping the world leverage self education on a new level. And to introduce it to the world, we're launching <strong> The Perfect Mastermind Formula course + Mindmint</strong> - the done-for-you software on April 30th 2019.<br>
+				<span> (Invite start date is April 19th, 2019)</span>
             </p>
         </div>
     </div> <!-- end about-desc -->
 
     <div class="row">
 
-        <div class="about-process process block-1-2 block-tab-full">
+        <div class="about-process ">
 
-            <div class="process__vline-left"></div>
-            <div class="process__vline-right"></div>
+			<!--		ADD TO CLASS TO TIE SCROLL EVENTS
+						process block-1-2 block-tab-full
 
-            <div class="col-block process__col" data-item="1" data-aos="fade-up">
+						<div class="process__vline-left"></div>
+						<div class="process__vline-right"></div>
+			-->
+			<div>
+				<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+					<iframe 
+							src="//cdn.iframe.ly/foNpjGV?playerjs=1&click_to_play=true" 
+							style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;  border-radius: 25px;" 
+							allowfullscreen 
+							scrolling="no" 
+							allow="autoplay; 
+							encrypted-media"
+							>
+					</iframe>
+				</div>
+			</div>
+			<br>
+            <div class="col-block " data-aos="fade-up" >
                 <div class="process__text">
-                    <h4>Define</h4>
-
-                    <p>
-                        Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi
-                        explicabo non quis magni recusandae.
-                        Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos
-                        maxime tempore quasi deserunt ab.
+                    <p class="post-video-text">
+                        This world-class combination of software and education is <strong> completely NEW</strong> and the first of its kind!
+                        <strong> The Perfect Mastermind Formula</strong> paired with the <strong>Mindmint Software</strong> will allow anyone to start a highly impactful
+                        and highly profitable mastermind just like <strong>Dean</strong> & <strong>Tony</strong> have been doing for years.
                     </p>
                 </div>
             </div>
-            <div class="col-block process__col" data-item="2" data-aos="fade-up">
+            <div class="process__col" data-aos="fade-up" >
                 <div class="process__text">
-                    <h4>Design</h4>
 
-                    <p>
-                        Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi
-                        explicabo non quis magni recusandae.
-                        Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos
-                        maxime tempore quasi deserunt ab.
+                    <p class="post-video-text-colored">
+                        This is one of the most highly demanded products Tony or Dean has ever made, yet there isn't any competition - ZERO!
                     </p>
                 </div>
             </div>
-            <div class="col-block process__col" data-item="3" data-aos="fade-up">
+            <div class="row services-list block-1-5 block-m-1-2 block-tab-full">
+				<div class="col-block service-item " data-item="1" data-aos="fade-up">
+					<div class="align-center service-icon service-icon--brand-identity">
+						<img  src="./images/icons/png/LightBulbIcon1x.png" alt="Light Buld Icon">
+					</div>
+					<div class="service-text align-center">
+						<h3 class="h4">Identitfy</h3>
+						<p class="block-subtext">
+							The course shows people how to systematically extract what they know.
+						</p>
+					</div>
+        		</div>
+                <div class="col-block service-item" data-item="2" data-aos="fade-up">
+					<div class="align-center service-icon service-icon--brand-identity">
+						<img src="images/icons/png/GearIcon1x.png" alt="Light Buld Icon">
+					</div>
+					<div class="service-text align-center">
+						<h3 class="h4">Automate</h3>
+						<p class="block-subtext">
+							The software automatically creates an agenda for a powerful mastermind.(whether in person or virtual).
+						</p>
+					</div>
+        		</div>
+                <div class="col-block service-item align-center" data-item="3" data-aos="fade-up">
+                    <div class="service-icon service-icon--brand-identity">
+                        <img src="images/icons/png/TargetIcon1x.png" alt="Light Buld Icon">
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Goals</h3>
+                        <p class="block-subtext">
+							The course gives people the proven marketing strategies to fill the seats, get paid, and do it over again.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block service-item align-center" data-item="4" data-aos="fade-up">
+                    <div class="service-icon service-icon--brand-identity">
+                        <img src="images/icons/png/StockIcon1x.png" alt="Light Buld Icon">
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Step-by-Step</h3>
+                        <p class="block-subtext">
+							We give people the proven tools and walks them step by step through the process of running their mastermind & delivering an unforgettable experience so people will keep paying them year after year. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block service-item align-center" data-item="5" data-aos="fade-up">
+                    <div class="service-icon service-icon--brand-identity">
+                        <img src="images/icons/png/PeerIcon1x.png" alt="Light Buld Icon">
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Delivery</h3>
+                        <p class="block-subtext">
+							And if they're not the expert, it shows people how to facilitate a mastermind for someone else (and get paid to do it).
+                        </p>
+                    </div>
+                </div>
+			</div>
+            </div>
+            <div class="col-block process__col align-center" data-aos="fade-up">
                 <div class="process__text">
-                    <h4>Build</h4>
-
-                    <p>
-                        Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi
-                        explicabo non quis magni recusandae.
-                        Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos
-                        maxime tempore quasi deserunt ab.
+                  <br>
+                    <p class="block-subtext subtext-colored">
+                        Up until now the logistics of running a mastermind were hard and at times overwhelming.
+						But The <strong>Perfect Mastermind Formula</strong> + <strong>Mindmint</strong> takes away all the complexity. The course shows people everything they need to know to extract their knowledge, fill an event and make sure it runs smoothly for a huge profit while the software handles all of the logistics. <br>
+						<span>(Dean and Tony literally spent $500k on the software alone to make running a successful mastermind effortless.)</span>
                     </p>
                 </div>
             </div>
-            <div class="col-block process__col" data-item="4" data-aos="fade-up">
-                <div class="process__text">
-                    <h4>Launch</h4>
-
-                    <p>
-                        Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi
-                        explicabo non quis magni recusandae.
-                        Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos
-                        maxime tempore quasi deserunt ab.
-                    </p>
-                </div>
-            </div>
-
+			<div class="align-center">
+				<button
+					class="partner-button"
+					data-aos="fade-up"
+					data-aos-duration="750"
+					>
+					BECOME A PARTNER
+				</button>
+		 </div>
         </div> <!-- end process -->
-
     </div> <!-- end about-stats -->
 
 </section> <!-- end s-about -->
-
+<!-- TODO: Tony and Dean News needs done, mimic lines from orignal about section.  -->
 
 <!-- services
 ================================================== -->
@@ -977,6 +1045,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script src="js/plugins.js"></script>
+<!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
 <script src="js/main.js"></script>
 <script src="js/carousel.js"></script>
 
