@@ -1769,7 +1769,7 @@ input::-moz-focus-inner {
   background-color: #c7b377;
   position: absolute;
   left: 45%;
-  top: 10rem;
+  top: 77%;
 }
 
 .home-content__main {
@@ -1780,8 +1780,8 @@ input::-moz-focus-inner {
 
 .home-content-subtext {
   font-family: myriad-pro, sans-serif;
-  font-style: normal;	
-  font-weight: 300;	
+  font-style: normal;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.53;
@@ -1790,7 +1790,7 @@ input::-moz-focus-inner {
   color: #bcbec0;
   text-align: justify;
   width: 65%;
-  margin-left: 20%		
+  margin-left: 15%;
 }
 
 .home-content-button{
@@ -1798,9 +1798,9 @@ input::-moz-focus-inner {
   border-radius: 10px;
   background-color: #333333;
   width: 402px;
-  position: relative;	
-  margin-left: 10%;
-  margin-top: 3em;	  
+  position: relative;
+  margin-left: 11%;
+  margin-top: 3em;
 }
 .home-content-button-accent-color {
 	color: #C7B277
@@ -2616,10 +2616,15 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   color: #555555;
   position: relative;
+  background-image: url("../images/news-bg/news-bg3x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-size: cover;	
 }
 
 
