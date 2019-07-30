@@ -821,6 +821,7 @@ input[type="button"]:focus {
   border-color: #b8b8b8;
   color: #FFFFFF;
   outline: 0;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 /* button primary
@@ -1243,6 +1244,35 @@ input::-moz-focus-inner {
 
 .display-1 .white-h1 {
   color: white;
+}
+.display-1 .header-bold {
+  font-weight: bold;
+}
+.display-2 {
+  font-family: myriad-pro, sans-serif;
+  font-size: 30px;
+  line-height: 1.57;
+  letter-spacing: 7.2px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 4.8rem;
+  text-align: left;
+}
+.display-2 span {
+  color: #c7b377;
+}
+
+.display-2 .white-h1 {
+  color: white;
+}
+.display-2 .header-bold {
+  font-weight: bold;
+}
+.Rectangle-2-copy {
+  width: 4px;
+  height: 144px;
+  object-fit: contain;
+  background-color: #c7b277;
 }
 .section-overlay {
     display: absolute;
@@ -2459,6 +2489,20 @@ html.no-csstransitions .home-content__main {
   top: 0;
   left: calc(50% + 20px + 24px);
 }
+.process-line-left {
+  display: block;
+  position: absolute;	
+  top: 2%;
+  left: 10%;
+  z-index: 1;
+}
+.process-line-center {
+  display: block;
+  position: absolute;
+  top: 1%;
+  left: 48.6%;
+  z-index: 1;
+}
 .process h4 {
   font-size: 2.8rem;
   line-height: 1.5;
@@ -2523,6 +2567,12 @@ html.no-csstransitions .home-content__main {
 	color: #c7b377;
 	background-color: #333333;
 	box-shadow: 1px 3px 5px 3px gray;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.partner-button :hover {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2715,7 +2765,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-works {
   background: #ffffff;
-  padding: 10rem 0 24rem;
+  padding: 10rem 0 12rem;
   position: relative;
 }
 
@@ -2893,7 +2943,55 @@ html.no-csstransitions .home-content__main {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-
+.work-header {
+  font-family: myriad-pro, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: 1.96px;
+  color: #000000;
+}
+.block-subtext-not-centered {
+  text-align: left;
+  font-size: 15px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.53;
+  letter-spacing: 0.6px;
+  color: #58595b;
+}
+.work-header-text {
+  font-family: myriad-pro, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.92;
+  letter-spacing: 8px;
+  text-align: left;
+  color: #000000;
+}
+.learn-more-anchor-text {
+  font-family: myriad-pro, sans-serif;
+  font-size: 14px;
+  font-stretch: normal;
+  line-height: 1.64;
+  font-weight: bold;
+  letter-spacing: 1.96px;
+  text-align: center;
+  color: #000000;
+}
+.work-header h4 + :after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 5px;
+  background-color: #c7b377;
+  position: absolute;
+  left: 24%;
+  top: 16%;
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -3135,8 +3233,9 @@ html.no-csstransitions .home-content__main {
 .s-stats {
   padding-top: 4.2rem;
   padding-bottom: 4.2rem;
-  background-color: #050505;
-  background-image: url(../images/stats-bg.jpg);
+  border-top: #5C5C5C;
+  border-width: 35px;
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3146,7 +3245,7 @@ html.no-csstransitions .home-content__main {
 .s-stats::before {
   display: block;
   content: "";
-  background-color: #050505;
+  background-color: white;
   position: absolute;
   top: 0;
   left: 0;
@@ -3189,14 +3288,29 @@ html.no-csstransitions .home-content__main {
 }
 .stats h5 {
   font-family: "metropolis-regular", sans-serif;
-  font-size: 1.8rem;
+  font-size: 0.6rem;
   line-height: 1.333;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 1.8rem;
   position: relative;
 }
+.delivers-block {
+  text-align: center;	
 
+}
+.phone-section-header  {
 
+}
+.phone-section-header-text {
+  color: #58595b;
+  font-family: myriad-pro, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.53;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * stats
@@ -3419,8 +3533,8 @@ html.no-csstransitions .home-content__main {
   width: 60px;
   line-height: 60px;
   text-align: center;
-  background: black;
-  color: white;
+  background: #ffffff;
+  color: black;
   text-align: center;
   text-transform: uppercase;
   border-radius: 50%;
@@ -3433,8 +3547,8 @@ html.no-csstransitions .home-content__main {
 }
 .cl-go-top a:hover,
 .cl-go-top a:focus {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #c7b377;
+  color: #ffffff;
 }
 .cl-go-top::before {
   content: "";
